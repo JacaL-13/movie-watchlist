@@ -1,0 +1,89 @@
+html {
+  background: #272727;
+  color: white;
+}
+
+header {
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 80px;
+  background: #25aae1;
+}
+
+button {
+  height: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0px 12px;
+  color: #25aae1;
+  background-color: transparent;
+  border: 2px solid #25aae1;
+  border-radius: 3px;
+  min-width: 125px;
+  cursor: pointer;
+}
+
+.page {
+  width: calc(100vw - 520px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-container {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.movie-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.movie-card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border: 1px solid transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.movie-card:hover {
+  border: 1px solid black;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.watchlist {
+  width: 500px;
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  text-align: center;
+}
